@@ -10,8 +10,7 @@
     "build:prod": "npm run build -prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build"
+    "e2e": "ng e2e"
   },
   "dependencies": {
     "@agm/core": "1.0.0-beta.2",
