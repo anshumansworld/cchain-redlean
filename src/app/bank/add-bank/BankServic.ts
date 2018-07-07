@@ -2,9 +2,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
-import { Bank } from '../../services/factory/bank';
 import { DataService } from './DataService';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Bank } from '../../services/factory/bank';
 @Injectable()
 export class BankService {
   private NAMESPACE = 'Bank';

@@ -7,8 +7,7 @@ import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../bank/user-profile.component';
 import { TableListComponent } from '../../account/table-list.component';
 import { TypographyComponent } from '../../transaction/typography.component';
-import { IconsComponent } from '../../icons/icons.component';
-import { MapsComponent } from '../../maps/maps.component';
+import { MapsComponent } from '../../contract/maps.component';
 import { NotificationsComponent } from '../../cheque/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
@@ -16,10 +15,10 @@ import { MatButtonModule,MatInputModule,MatRippleModule,MatTooltipModule} from '
 import { TransactionDepartureComponent } from '../../transaction/transaction-departure/transaction-departure.component';
 import { TransactionArrivedComponent } from '../../transaction/transaction-arrived/transaction-arrived.component';
 import { ButtonsModule } from 'ngx-bootstrap';
-import { AllContractComponent } from '../../maps/all-contract/all-contract.component';
-import { ValidContractComponent } from '../../maps/valid-contract/valid-contract.component';
-import { InprogressContractComponent } from '../../maps/inprogress-contract/inprogress-contract.component';
-import { EroorContractComponent } from '../../maps/eroor-contract/eroor-contract.component';
+import { AllContractComponent } from '../../contract/all-contract/all-contract.component';
+import { ValidContractComponent } from '../../contract/valid-contract/valid-contract.component';
+import { InprogressContractComponent } from '../../contract/inprogress-contract/inprogress-contract.component';
+import { EroorContractComponent } from '../../contract/eroor-contract/eroor-contract.component';
 import { AllChequeComponent } from '../../cheque/all-cheque/all-cheque.component';
 import { ChequeInbankComponent } from '../../cheque/cheque-inbank/cheque-inbank.component';
 import { ChequeIntransitComponent } from '../../cheque/cheque-intransit/cheque-intransit.component';
@@ -41,7 +40,6 @@ import { AddBankComponent } from '../../bank/add-bank/add-bank.component';
     UserProfileComponent,
     TableListComponent,
     TypographyComponent,
-    IconsComponent,
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,

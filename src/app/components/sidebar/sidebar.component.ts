@@ -12,7 +12,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/account', title: 'Account',  icon:'people', class: '' },
     { path: '/bank', title: 'Bank',  icon:'account_balance', class: '' },  
     { path: '/transaction', title: 'Transaction',  icon:'swap_horiz', class: '' },
-    // { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
     { path: '/contract', title: 'Contract',  icon:'content_paste', class: '' },
     { path: '/cheque', title: 'Cheque',  icon:'credit_card', class: '' },
     { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
