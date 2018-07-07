@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-plain">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title mt-0">List of valid contract</h4>
+            <p class="card-category"> Here is a subtitle for this table</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead class="">
+                  <th>Recipient account </th>
+                  <th>Owner account</th>
+                  <th>Bank owner</th>
+                  <th>Check</th>
+                  <th>State</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ValidContract of posts">
+                    <td>{{ValidContract.compte_newowner}}</td>
+                    <td>{{ValidContract.compte_owner}}</td>
+                    <td>{{ValidContract.owner}}</td>
+                    <td>{{ValidContract.check}}</td>
+                    <td>{{ValidContract.validation}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

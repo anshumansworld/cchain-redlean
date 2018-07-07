@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-plain">
+                <div class="card-header card-header-danger">
+                    <h4 class="card-title mt-0">list of bank</h4>
+                    <p class="card-category"> Here is a subtitle for this table</p>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="">
+                                <th>Bank Code</th>
+                                <th>Bank Name</th>
+                                <th>Address</th>
+                                <th>Agency</th>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let bank of allBanks | async">
+                                    <td>{{bank.Idbank}}</td>
+                                    <td>{{bank.name}}</td>
+                                    <td>{{bank.adresse}}</td>
+                                    <td>{{bank.Idagence}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

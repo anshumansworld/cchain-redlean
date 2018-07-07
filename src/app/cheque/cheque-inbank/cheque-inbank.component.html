@@ -1,0 +1,40 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-plain">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title mt-0">List of check in bank</h4>
+            <p class="card-category"> Here is a subtitle for this table</p>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead class="">
+                  <th>ID check </th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Bank receiver</th>
+                  <th>Bank owner</th>
+                  <th>Account owner</th>
+                  <th>State</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let checkinbank of posts">
+                    <td>{{checkinbank.Idcheck}}</td>
+                    <td>{{checkinbank.amount}}</td>
+                    <td>{{checkinbank.date}}</td>
+                    <td>{{checkinbank.receiver}}</td>
+                    <td>{{checkinbank.owner}}</td>
+                    <td>{{checkinbank.compte_owner}}</td>
+                    <td>{{checkinbank.statue}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

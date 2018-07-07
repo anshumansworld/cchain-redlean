@@ -1,0 +1,88 @@
+    <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Add bank</h4>
+                        <p class="card-category">add new bank</p>
+                    </div>
+                    <div class="card-body">
+                        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm" *ngIf="bank">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="inputidbank" class="col-sm-3 col-form-label">Id bank</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" #titleInput="ngModel" required name="Idbank" id="field_title" [(ngModel)]="bank.Idbank"
+                                      />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputnamebank" class="col-sm-3 col-form-label">Name bank</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" #titleInput="ngModel" required name="name" id="field_title" [(ngModel)]="bank.name"
+                                      />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputadressbank" class="col-sm-3 col-form-label">Adress bank</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" #titleInput="ngModel" required name="adresse" id="field_title" [(ngModel)]="bank.adresse"
+                      />
+                    </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                  <div class="col-md-12">
+                                      <label for="inputidagence" class="col-sm-3 col-form-label">ID agency</label>
+                                      <div class="col-sm-9">
+                                        <input type="text" class="form-control" #titleInput="ngModel" required name="Idagence" id="field_title" [(ngModel)]="bank.Idagence"
+                                        />
+                                      </div>
+                                  </div>
+                              </div>        
+                            <button mat-raised-button type="submit" [disabled]="!editForm.form.valid" class="btn btn-danger pull-right">Add bank</button>
+                        </form>
+                    </div>
+                </div>
+              </div>  
+
+
+
+              
+             
+
+
+
+
+
+              <!-- <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm" *ngIf="bank">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Id bank" type="text" [(ngModel)]="bank.Idbank">
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-4">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="name Bank" type="text" [(ngModel)]="bank.name">
+                        </mat-form-field>
+                      </div>
+                      <div class="col-md-4">
+                        <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Adress" type="text" [(ngModel)]="bank.adresse">
+                        </mat-form-field>
+                      </div>
+                  </div> 
+                  <div class="row">
+                        <div class="col-md-12">
+                          <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Id agency" type="text" [(ngModel)]="bank.Idagence">
+                          </mat-form-field>
+                        </div>
+                    </div>         
+                  <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Profile</button> 
+
+                   <button type="submit" [disabled]="!editForm.form.valid" class="btn-danger pull-right">
+                      <span class="fa fa-save"></span>&nbsp;
+                      <span>Valider</span>
+                    </button>
+                  <div class="clearfix"></div>
+              </form>  -->

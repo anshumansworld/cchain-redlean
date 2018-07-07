@@ -1,0 +1,48 @@
+<div class="main-content">
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+            <div class="btn-group">
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="allcheck" tabindex="0" role="button">All check</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="inbank" tabindex="0" role="button">check in bank</label>
+                <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="intransit" tabindex="0" role="button">heck in transit</label>
+            </div>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+</div>
+
+<div *ngIf="radioModel == 'allcheck'">
+    <app-all-cheque></app-all-cheque>
+</div>
+
+<div *ngIf="radioModel == 'inbank'">
+    <app-cheque-inbank></app-cheque-inbank>
+</div>
+
+<div *ngIf="radioModel == 'intransit'">
+    <app-cheque-intransit></app-cheque-intransit>
+</div>
+</div>
+
+<style>
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .show>.btn-primary.dropdown-toggle {
+        color: #ffffff;
+        background-color: #182e4b;
+        border-color: #000000;
+    }
+
+    .mat-button.btn.btn-primary,
+    .mat-raised-button.btn.btn-primary,
+    .mat-raised-button.btn:not([class*=mat-elevation-z]).btn-primary,
+    .btn.btn-primary {
+        color: #fff;
+        background-color: #3a4d65;
+        border-color: #0a0a0a;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+        box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+    }
+</style>
