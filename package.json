@@ -10,7 +10,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build "
   },
   "dependencies": {
     "@agm/core": "1.0.0-beta.2",
