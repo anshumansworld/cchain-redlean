@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
+    "build:prod": "npm run build",
     "start": "ng serve dist/",
     "preinstall": "npm install -g http-server",
     "test": "ng test",
