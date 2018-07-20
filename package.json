@@ -6,11 +6,11 @@
     "ng": "ng",
     "build": "ng build",
     "build:prod": "npm run build",
-    "start": "ng serve --project=cchain-redlean",
-    "preinstall": "npm install -g http-server",
+    "start": "node server.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
     
   },
   "engines": {
@@ -51,7 +51,8 @@
     "popper.js": "1.14.3",
     "rxjs": "5.5.10",
     "web-animations-js": "2.3.1",
-    "zone.js": "0.8.4"
+    "zone.js": "0.8.4",
+    "typescript": "2.4.2"
   },
   "devDependencies": {
     "@angular/language-service": "5.2.9",
@@ -72,6 +73,6 @@
     "protractor": "5.3.1",
     "ts-node": "5.0.1",
     "tslint": "5.9.1",
-    "typescript": "2.4.2"
+    "enhanced-resolve": "3.3.0"
   }
 }
